@@ -1,0 +1,8 @@
+.normal{
+  width: 250px;
+   border: 5px solid #F4FA58;
+}
+.normal tr, .normal td {
+  width: 250px;
+  border: 1px solid #ffff;
+}

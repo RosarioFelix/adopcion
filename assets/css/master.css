@@ -1,0 +1,50 @@
+.dropbtn {
+  background-color: #F6CED8;
+  color: black;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-style: normal;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #eeee;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F6CED8;
+  min-width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #eee;
+}
+
+.show {
+  display:block;
+}
+
+.hola{
+float:right;
+}
+.holaOtro{
+float:right;
+}
