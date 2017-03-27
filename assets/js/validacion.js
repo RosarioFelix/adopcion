@@ -10,6 +10,7 @@ botoni.addEventListener("click",function (e) {
    //MATCH -- compara cadena con expr.reg (ex.reg - encontradas en inter)
    var letras1 = n.match(/[A-Z]{1,}[a-z]+/);  //distincion entre mayusculas y min.
    var letras2 = ln.match(/[A-Z]{1,}[a-z]+/);
+   var email1 = email.match( /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i);
 
    // condiciones
     if((n.length == 0)||(ln.length == 0)||(phone.length==0)||(email.length == 0)||(address.length==0)){
@@ -18,6 +19,8 @@ botoni.addEventListener("click",function (e) {
        alert ("Nombre Invalidos \n *Primera Letra Mayuscula ")
      }else if (ln!= letras2) {
       alert ("Apellidos Invalidos  \n *Primera Letra Mayuscula")
+    }else if (email != email1 ) {
+      alert("Email incorrecto")
       // formato de validacion de un email
     }else if (phone.length >10) {
       alert("Ingrese Numero de 9 digitos")
